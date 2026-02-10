@@ -5,7 +5,9 @@ namespace pkproject
     {
         static void Main(string[] args)
         {
-            
+            /* NF = non fini
+               pk = pokemon
+            */
         }
 
         static void InitialisationPk()
