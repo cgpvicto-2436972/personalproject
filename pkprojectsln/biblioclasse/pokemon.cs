@@ -7,15 +7,17 @@ namespace biblioclasse
     /// </summary>
     public class Pokemon
     {
-        private int dexnumber;
-        private string name;
-        private int level;
-        private int pv;
-        private int attaque;
-        private int defense;
-        private int attaquespe;
-        private int defensespe;
-        private int vitesse;
+        private int _dexnumber;
+        private string _name;
+        private int _level;
+        private int _pv;
+        private int _attaque;
+        private int _defense;
+        private int _attaquespe;
+        private int _defensespe;
+        private int _vitesse;
+        private Type _type1;
+        private Type _type2;
 
         //-----------------------------------------------------------------------------------------------------------------------//
         //---------------------------------------------Les Constructeurs---------------------------------------------------------//
@@ -23,15 +25,15 @@ namespace biblioclasse
 
         public Pokemon(int dexnumber, string name, int level, int pv, int attaque, int defense, int attaquespe, int defensespe, int vitesse)
         {
-            this.dexnumber = dexnumber;
-            this.name = name;
-            this.level = level;
-            this.pv = pv;
-            this.attaque = attaque;
-            this.defense = defense;
-            this.attaquespe = attaquespe;
-            this.defensespe = defensespe;
-            this.vitesse = vitesse;
+            Dexnumber = dexnumber;
+            Name = name;
+            Level = level;
+            Pv = pv;
+            Attaque = attaque;
+            Defense = defense;
+            Attaquespe = attaquespe;
+            Defensespe = defensespe;
+            Vitesse = vitesse;
         }
 
         //-----------------------------------------------------------------------------------------------------------------------//
@@ -40,82 +42,82 @@ namespace biblioclasse
 
         public int Dexnumber
         { 
-            get => dexnumber;
+            get => _dexnumber;
             private set
             {
-                dexnumber = value;
+                _dexnumber = value;
             }
         }
 
         public string Name 
         { 
-            get => name;
+            get => _name;
             private set
             {
-                name = value;
+                _name = value;
             }
         }
 
         public int Level 
         { 
-            get => level;
+            get => _level;
             private set
             {
-                level = value;
+                _level = value;
             }
         }
 
         public int Pv 
         { 
-            get => pv;
+            get => _pv;
             private set
             {
-                pv = value;
+                _pv = value;
             }
         }
 
         public int Attaque 
         { 
-            get => attaque;
+            get => _attaque;
             private set
             {
-                attaque = value;
+                _attaque = value;
             }
         }
 
         public int Defense 
         { 
-            get => defense;
+            get => _defense;
             private set
             {
-                defense = value;
+                _defense = value;
             }
         }
 
         public int Attaquespe 
         { 
-            get => attaquespe;
+            get => _attaquespe;
             private set
             {
-                attaquespe = value;
+                _attaquespe = value;
             }
         }
 
         public int Defensespe 
         { 
-            get => defensespe;
+            get => _defensespe;
             private set
             {
-                defensespe = value;
+                _defensespe = value;
             }
         }
 
         public int Vitesse 
         { 
-            get => vitesse;
+            get => _vitesse;
             private set
             {
-                vitesse = value;
+                _vitesse = value;
             }
         }
     }
