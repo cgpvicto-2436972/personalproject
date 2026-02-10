@@ -5,19 +5,34 @@ namespace biblioclasse
     /// <summary>
     /// Classe créant des pokemons
     /// </summary>
-    public class pokemon
+    public class Pokemon
     {
-        private int _dexnumber;
-        private string _name;
-        private int _level;
-        private int _pv;
-        private int _attaque;
-        private int _defense;
-        private int _attaquespe;
-        private int _defensespe;
-        private int _vitesse;
+        private int dexnumber;
+        private string name;
+        private int level;
+        private int pv;
+        private int attaque;
+        private int defense;
+        private int attaquespe;
+        private int defensespe;
+        private int vitesse;
 
+        //-----------------------------------------------------------------------------------------------------------------------//
+        //---------------------------------------------Les Constructeurs---------------------------------------------------------//
+        //-----------------------------------------------------------------------------------------------------------------------//
 
+        public Pokemon(int dexnumber, string name, int level, int pv, int attaque, int defense, int attaquespe, int defensespe, int vitesse)
+        {
+            this.dexnumber = dexnumber;
+            this.name = name;
+            this.level = level;
+            this.pv = pv;
+            this.attaque = attaque;
+            this.defense = defense;
+            this.attaquespe = attaquespe;
+            this.defensespe = defensespe;
+            this.vitesse = vitesse;
+        }
 
         //-----------------------------------------------------------------------------------------------------------------------//
         //-----------------------------------------------Les Accesseurs----------------------------------------------------------//
@@ -25,82 +40,82 @@ namespace biblioclasse
 
         public int Dexnumber
         { 
-            get => _dexnumber;
+            get => dexnumber;
             private set
             {
-                _dexnumber = value;
+                dexnumber = value;
             }
         }
 
         public string Name 
         { 
-            get => _name;
+            get => name;
             private set
             {
-                _name = value;
+                name = value;
             }
         }
 
         public int Level 
         { 
-            get => _level;
+            get => level;
             private set
             {
-                _level = value;
+                level = value;
             }
         }
 
         public int Pv 
         { 
-            get => _pv;
+            get => pv;
             private set
             {
-                _pv = value;
+                pv = value;
             }
         }
 
         public int Attaque 
         { 
-            get => _attaque;
+            get => attaque;
             private set
             {
-                _attaque = value;
+                attaque = value;
             }
         }
 
         public int Defense 
         { 
-            get => _defense;
+            get => defense;
             private set
             {
-                _defense = value;
+                defense = value;
             }
         }
 
         public int Attaquespe 
         { 
-            get => _attaquespe;
+            get => attaquespe;
             private set
             {
-                _attaquespe = value;
+                attaquespe = value;
             }
         }
 
         public int Defensespe 
         { 
-            get => _defensespe;
+            get => defensespe;
             private set
             {
-                _defensespe = value;
+                defensespe = value;
             }
         }
 
         public int Vitesse 
         { 
-            get => _vitesse;
+            get => vitesse;
             private set
             {
-                _vitesse = value;
+                vitesse = value;
             }
         }
     }
