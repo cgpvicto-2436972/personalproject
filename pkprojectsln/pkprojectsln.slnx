@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="biblioclasse/biblioclasse.csproj" Id="db477b96-ca23-48c3-b6e4-aa46fe7cf557" />
   <Project Path="pkproject/pkproject.csproj" />
 </Solution>
