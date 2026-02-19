@@ -8,7 +8,7 @@ namespace biblioclasse
     public class Pokemon
     {
         private int _dexnumber;
-        private string _name;
+        private string _nom;
         private int _level;
         private int _pv;
         private int _attaque;
@@ -23,10 +23,10 @@ namespace biblioclasse
         //---------------------------------------------Les Constructeurs---------------------------------------------------------//
         //-----------------------------------------------------------------------------------------------------------------------//
 
-        public Pokemon(int dexnumber, string name, int level, int pv, int attaque, int defense, int attaquespe, int defensespe, int vitesse)
+        public Pokemon(int dexnumber, string nom, int level, int pv, int attaque, int defense, int attaquespe, int defensespe, int vitesse)
         {
             Dexnumber = dexnumber;
-            Name = name;
+            Nom = nom;
             Level = level;
             Pv = pv;
             Attaque = attaque;
@@ -49,12 +49,12 @@ namespace biblioclasse
             }
         }
 
-        public string Name 
+        public string Nom 
         { 
-            get => _name;
+            get => _nom;
             private set
             {
-                _name = value;
+                _nom = value;
             }
         }
 
